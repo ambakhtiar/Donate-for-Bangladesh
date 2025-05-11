@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for Bangladesh</title>
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/eb3cadc904.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body class="fira-code">
+    <header class="sticky top-0 bg-[rgb(245,243,243)/80] backdrop-blur-sm z-50 shadow-md">
+        <!-- Navbar -->
+        <nav class="bg-[rgb(221,220,220)]">
+            <nav class="w-14/15 md:w-9/10 lg:w-8/10 mx-auto flex justify-between pb-2 py-2">
+                <button
+                    class="btn-blog hidden md:block text-xl lg:text-2xl font-bold px-4 py-2 rounded-xl active">Blog</button>
+                <div class="flex items-center gap-4">
+                    <img class="h-1/2 md:h-7/10" src="./assets/logo.png" alt="">
+                    <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">Donate for Bangladesh</h1>
+                </div>
+                <div class="flex justify-between items-center ">
+                    <img class="h-1/2" src="./assets/coin.png" alt="">
+                    <h2 class="text-lg md:text-2xl lg:text-3xl"><span>10000</span> BDT</h2>
+                </div>
+            </nav>
+        </nav>
+    </header>
+
+    <main class="w-14/15 md:w-9/10 lg:w-8/10 mx-auto my-12">
+        <section class="space-y-4">
+            <h1 class="text-3xl md:text-4xl font-bold">Important Faq <i class="fa-regular fa-circle-question"></i></h1>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold text-xl">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content text-lg">The Document Object Model (DOM) is a programming interface for
+                    HTML and XML documents. It represents the structure of a document as a hierarchical tree of objects,
+                    allowing programmers to access, modify, and interact with the document's content, structure, and
+                    style. Think of it as a way to dynamically change or interact with the content and structure of a
+                    web page.
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold text-xl">How do you select an element from the DOM?</div>
+                <div class="collapse-content text-lg">You can select DOM elements using methods like getElementById,
+                    querySelector, or getElementsByClassName.
+                    Event delegation lets you handle events at a parent level using bubbling, reducing multiple
+                    listeners.
+                    Use .setAttribute, .style.property, or class methods like .classList.add() to change attributes and
+                    styles.</div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold text-xl">What is event delegation in the context of the DOM,
+                    and why is it useful?</div>
+                <div class="collapse-content text-lg">Event delegation is a technique in the DOM where a single event
+                    listener is added to a parent element to handle events for its child elements, using event bubbling.
+                    <br> <br>
+                    ✅ Why it's useful: <br>
+                    Reduces memory usage by minimizing event listeners.
+                    Automatically works for dynamically added child elements.
+                    Simplifies code maintenance and improves performance.
+                    <br> <br>
+                    🧠 JavaScript Code: <br>
+                    document.getElementById('parent'). <br>
+                    <span class="ml-12"></span>addEventListener('click', function (e) { <br>
+                    <span class="ml-12"></span>if (e.target.matches('.child')) { <br>
+                    <span class="ml-12"></span>console.log('Child element clicked'); <br>
+                    }
+                    });
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold text-xl">How do you manipulate an element's attributes and
+                    styles using the DOM?</div>
+                <div class="collapse-content text-lg">
+                    <h2 class="text-bold">You can manipulate an element's attributes using:</h2>
+                    <li>element.setAttribute('name', 'value') — sets an attribute</li>
+                    <li>element.getAttribute('name') — gets the value</li>
+                    <li>element.removeAttribute('name') — removes an attribute</li>
+                    <br>
+                    <h2 class="text-bold">To manipulate styles, use:</h2>
+                    <li>element.style.property = 'value' — e.g., element.style.color = 'red'</li>
+                    <li>element.classList.add('className'), .remove(), or .toggle() — for class-based styling</li>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+ .fira-code {
+     font-family: "Fira Code", monospace;
+ }
+
+ .active {
+     background-color: #B4F461;
+     font-weight: bold;
+ }
