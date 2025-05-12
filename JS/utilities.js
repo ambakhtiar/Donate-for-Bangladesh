@@ -16,7 +16,6 @@ function setHistory(donation, message) {
         <h2 class="text-xl font-bold">${donation} Taka is Donated for ${message} Bangladesh</h2>
     `;
     div.appendChild(p);
-    // console.log(div);
     document.getElementById('history').appendChild(div);
 }
 
@@ -32,13 +31,14 @@ function donate(type, input, balance) {
         document.getElementById(balance).innerText = projectBalance;
         document.getElementById('available-balance').innerText = availableBalance;
 
-        // my_modal_3.showModal();
+        // Modal Function Call 
         document.getElementById('my_modal_3').showModal();
 
         if (type === 'quota') setHistory(donation, "Aid for Injured in the Quota Movement,");
         else if (type === "feni") setHistory(donation, "Flood Relief in Feni,");
         else setHistory(donation, "flood Relief in Noakhali,");
 
+        document.getElementById(input).value = '';
     } else {
         alert('Invalid Your Donate')
     }
