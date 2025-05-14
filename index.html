@@ -19,6 +19,8 @@
     <script src="https://kit.fontawesome.com/eb3cadc904.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./CSS/style.css">
+
+    <link rel="icon" type="image/x-icon" href="./assets/logo.png">
 </head>
 
 <body class="fira-code">
@@ -29,12 +31,15 @@
                 <button
                     class="btn-blog hidden md:block text-xl lg:text-2xl font-bold px-4 py-2 rounded-xl active">Blog</button>
                 <div class="flex items-center gap-4">
-                    <img class="h-1/2 md:h-7/10" src="./assets/logo.png" alt="">
-                    <h1 class="text-xl md:text-2xl lg:text-3xl font-bold">Donate for Bangladesh</h1>
+                    <img class="h-1/2 md:h-7/10 hidden md:block" src="./assets/logo.png" alt="">
+                    <h1 class="text-lg md:text-2xl lg:text-3xl font-bold">Donate for Bangladesh</h1>
                 </div>
-                <div class="flex justify-between items-center ">
-                    <img class="h-1/2" src="./assets/coin.png" alt="">
-                    <h2 class="text-lg md:text-2xl lg:text-3xl"><span id="available-balance">10000</span> BDT</h2>
+                <div class="flex items-center gap-2">
+                    <img class="h-1/2 hidden md:block" src="./assets/coin.png" alt="">
+                    <div class="flex gap-px md:gap-1">
+                        <h2 class="text-lg md:text-2xl lg:text-3xl">10000</h2>
+                        <h2 class="text-lg md:text-2xl lg:text-3xl">BDT</h2>
+                    </div>
                 </div>
             </nav>
         </nav>
